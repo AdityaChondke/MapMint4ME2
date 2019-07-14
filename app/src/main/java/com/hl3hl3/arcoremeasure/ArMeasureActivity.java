@@ -64,9 +64,6 @@ import fr.geolabs.dev.mapmint4me.R;
 
 import io.fabric.sdk.android.Fabric;
 
-/**
- * Created by user on 2017/9/25.
- */
 
 public class ArMeasureActivity extends AppCompatActivity {
     private static final String TAG = ArMeasureActivity.class.getSimpleName();

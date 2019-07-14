@@ -9,12 +9,6 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
-/**
- *
- * https://stackoverflow.com/questions/16027455/what-is-the-easiest-way-to-draw-line-using-opengl-es-android
- *
- * Created by user on 2017/9/25.
- */
 
 public class LineRenderer {
 
