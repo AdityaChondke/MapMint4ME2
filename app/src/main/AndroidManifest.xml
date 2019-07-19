@@ -92,7 +92,7 @@
 
     <activity android:name=".ARPage"/>
         <meta-data android:name="com.google.ar.core" android:value="required" />
-
+    <activity android:name="com.hl3hl3.arcoremeasure.ArMeasureActivity"/>
     </application>
 
 </manifest>

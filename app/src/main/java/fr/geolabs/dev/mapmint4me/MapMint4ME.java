@@ -300,7 +300,7 @@ public class MapMint4ME extends Activity implements
     public void OnButtonClick(View V)
     {
         Toast.makeText(this,"Working",Toast.LENGTH_SHORT ).show();
-        Intent i = new Intent(MapMint4ME.this,ARPage.class);
+        Intent i = new Intent(MapMint4ME.this,com.hl3hl3.arcoremeasure.ArMeasureActivity.class);
         startActivity(i);
 
     }
