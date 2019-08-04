@@ -185,7 +185,7 @@ public class MapMint4ME extends Activity implements
         //mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         //mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR);
         super.onCreate(savedInstanceState);
-        mLocationRequest = LocationRequest.create();
+            mLocationRequest = LocationRequest.create();
         setContentView(R.layout.activity_map_mint4_me);
         b=(Button)findViewById(R.id.button2);
 
@@ -300,7 +300,7 @@ public class MapMint4ME extends Activity implements
     public void OnButtonClick(View V)
     {
         Toast.makeText(this,"Working",Toast.LENGTH_SHORT ).show();
-        Intent i = new Intent(MapMint4ME.this,com.hl3hl3.arcoremeasure.ArMeasureActivity.class);
+        Intent i = new Intent(MapMint4ME.this,drawar.DrawAR.class);
         startActivity(i);
 
     }
