@@ -128,7 +128,7 @@ public class MapMint4ME extends Activity implements
     private LocationRequest mLocationRequest;
     private NotificationManager mManager;
     private String TAG = "MapMint4ME";
-    Button b;
+    Button b,b2;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -189,6 +189,7 @@ public class MapMint4ME extends Activity implements
         setContentView(R.layout.activity_map_mint4_me);
         b=(Button)findViewById(R.id.button2);
 
+        b2=(Button)findViewById(R.id.button3);
 
 
         if (mGoogleApiClient == null) {
@@ -297,12 +298,20 @@ public class MapMint4ME extends Activity implements
             //myWebView.loadUrl("javascript:setTimeout(function(){console.log('##### START !!!');upgradeMMGPS();},100);");
         }
     }
-    public void OnButtonClick(View V)
+    public void OnButtonClickS(View V)
     {
-        Toast.makeText(this,"Working",Toast.LENGTH_SHORT ).show();
-        Intent i = new Intent(MapMint4ME.this,drawar.DrawAR.class);
-        startActivity(i);
 
+            Toast.makeText(this, "AR Scale", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(MapMint4ME.this, com.hl3hl3.arcoremeasure.ArMeasureActivity.class);
+            startActivity(i);
+
+    }
+    public void OnButtonClickD(View V)
+    {
+
+        Toast.makeText(this, "AR Draw", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(MapMint4ME.this, drawar.DrawAR.class);
+        startActivity(i);
     }
 
     private String channel_name="MapMint4ME";

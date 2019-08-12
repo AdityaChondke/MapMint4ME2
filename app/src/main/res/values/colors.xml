@@ -18,6 +18,7 @@
         <color name="dot_inactive_screen1">#ffa000</color>
         <color name="dot_inactive_screen2">#008c57</color>
         <color name="dot_inactive_screen3">#0e1e49</color>
+    <color name="gray">@android:color/darker_gray</color>
 
 
 
